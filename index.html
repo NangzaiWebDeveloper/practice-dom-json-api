@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- custom CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- daisy ui & tailwind css link  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.8.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="m-5">
+    <header>
+        <div class="text-center">
+            <input id="userInput" class= "h-12 w-96 border border-gray-600 rounded-lg" type="text">
+            <button onclick="evenHandler()" class="btn">Search</button>
+        </div>
+    </header>
+    <main class="mt-10">
+        <section class="flex gap-20">
+            <!-- left section cart  -->
+            <div id="cart-container">
+                <!-- cart-1  -->
+                <!-- <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Shoes!</h2>
+                      <div class="flex gap-9 font-bold">
+                        <p>Price: <span>500</span>$</p>
+                        <p>Men's Clothing</p>
+                      </div>
+                      <div class="card-actions gap-9">
+                        <div class="font-semibold text-gray-600 flex justify-center items-center text-lg gap-3">
+                            <i class="fa-regular fa-eye"></i>
+                            <p>1,568</p>
+                        </div>
+                        <button class="btn btn-primary">Buy Now</button>
+                      </div>
+                    </div>
+                  </div> -->
+            </div>
+
+            <!-- this is left cart section  -->
+            <div class="flex-1 border border-gray-600 rounded-lg">
+                <div class="flex text-lg font-bold justify-evenly border-b-2 border-gray-600">
+                    <h5>Name</h5>
+                    <h5>Price</h5>
+                </div>
+                <div id="add-cart" class="sticky top-0">
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- this is Spinner section  -->
+    <div id="loading-container" class="loadContainer text-center mt-24">
+        <span class="loading loading-spinner loading-md"></span>
+    </div>
+
+    <!-- this is not found section  -->
+    <div id="not-found" class="notFound">
+        <img src="img/404.png" alt="">
+    </div>
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
